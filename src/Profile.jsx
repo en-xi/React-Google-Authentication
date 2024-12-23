@@ -1,13 +1,13 @@
-import React from 'react'
+
 
 function Profile({ profileDetails, login, logout }) {
-  console.log(profileDetails)
+  console.log('profileDetails', profileDetails)
   return (
     <>
       {/* <h1>React Google Login</h1> */}
       <div className='profile-container'>
         {
-          profileDetails.length != 0 ? (
+          profileDetails ? (
             <div className="profile-details">
               <img src={profileDetails.picture} alt="" className='profile-avathar' />
               <div className="profile-content">
