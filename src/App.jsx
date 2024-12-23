@@ -38,7 +38,7 @@ function App() {
 
     const logOut = () => {
         googleLogout();
-        setProfile([]);
+        setProfile(null);
     };
 
     return (
